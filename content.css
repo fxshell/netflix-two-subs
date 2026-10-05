@@ -1,0 +1,32 @@
+#n2s-overlay {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 22%;
+  z-index: 2147483647 !important;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none !important;
+  padding: 0 5vw !important;
+  box-sizing: border-box !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  white-space: pre-line !important;
+}
+
+#n2s-text {
+  display: inline-block !important;
+  max-width: min(92vw, 1500px) !important;
+  padding: 0.15em 0.35em !important;
+  border-radius: 0.16em !important;
+  background: rgba(0, 0, 0, 0.68) !important;
+  color: #fff !important;
+  font-size: clamp(22px, 2.15vw, 42px) !important;
+  font-weight: 600 !important;
+  line-height: 1.24 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.95) !important;
+  box-decoration-break: clone !important;
+  -webkit-box-decoration-break: clone !important;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix Two Subs</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <div class="logo">2S</div>
+      <div>
+        <h1>Netflix Two Subs</h1>
+        <p>Two Netflix subtitle tracks. No translation service.</p>
+      </div>
+    </div>
+
+    <div id="notNetflix" class="notice hidden">
+      Open a Netflix title, start playback, then click the extension again.
+    </div>
+
+    <section id="controls">
+      <label for="primary">Primary (Netflix native)</label>
+      <select id="primary"></select>
+
+      <label for="secondary">Secondary (overlay)</label>
+      <select id="secondary"></select>
+
+      <div class="buttons">
+        <button id="apply" class="primary">Apply</button>
+        <button id="disable">Disable</button>
+      </div>
+
+      <button id="transcript" class="transcriptButton">Open transcript window ↗</button>
+      <label><input type="checkbox" id="overlayEnabled" checked> Show second subtitle on video</label>
+
+      <div class="status" id="status">Looking for Netflix subtitle tracks…</div>
+      <button id="refresh" class="linkButton">Refresh available languages</button>
+    </section>
+
+    <footer>
+      Netflix may briefly switch subtitle tracks while the secondary track is loaded.
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

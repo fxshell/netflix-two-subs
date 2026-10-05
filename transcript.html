@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix Two Subs — Transcript</title>
+  <link rel="stylesheet" href="transcript.css">
+</head>
+<body>
+  <header>
+    <div class="heading"><span class="badge">2S</span><h1>Episode transcript</h1></div>
+    <p id="status" role="status">Connecting to Netflix…</p>
+    <input type="search" id="search" aria-label="Search both languages" placeholder="Search English or Spanish…">
+    <div class="toolbar">
+      <label><input type="checkbox" id="follow" checked> Follow playback</label>
+      <button id="play">Play / pause</button>
+      <label class="size">Text <select id="size" aria-label="Text size"><option value="14">Small</option><option value="16" selected>Medium</option><option value="20">Large</option><option value="24">Extra large</option></select></label>
+    </div>
+    <div class="languages"><strong id="primaryLabel">Primary</strong><strong id="secondaryLabel">Secondary</strong></div>
+  </header>
+  <main id="rows" aria-label="Bilingual transcript"><p class="empty">Choose two languages in the 2S popup and click Apply.</p></main>
+  <footer>Click a timestamp to jump to that line. Scroll freely by turning off Follow playback.</footer>
+  <script src="transcript-core.js"></script>
+  <script src="transcript.js"></script>
+</body>
+</html>
